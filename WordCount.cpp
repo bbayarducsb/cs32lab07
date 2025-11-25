@@ -2,6 +2,7 @@
 
 #include "WordCount.h"
 #include <set>
+#include <functional>
 
 using namespace std;
 
