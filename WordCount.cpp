@@ -145,7 +145,7 @@ std::string WordCount::makeValidWord(std::string word) {
 
 
 void WordCount::dumpWordsSortedByWord(std::ostream &out) const {
-	std::set<pair<string, int>, std::greater<>> allWords; 
+	std::set<pair<string, int>, std::greater<pair<string, int>>> allWords; 
 	for(auto bucket : table) {
 		for(auto pair : bucket) {
 			allWords.insert(pair);
