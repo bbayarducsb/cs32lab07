@@ -174,7 +174,7 @@ void WordCount::addAllWords(std::string text) {
 	text += " "; 
 	int start = 0; 
 	int end; 
-	for(int i = 0; i < text.size(); i++) {
+	for(int i = 0; i < (int) text.size(); i++) {
 		if(text[i] == ' ' || text[i] == '\n' || text[i] == '\t') {
 			end = i; 
 			incrWordCount(text.substr(start, end - start)); 
